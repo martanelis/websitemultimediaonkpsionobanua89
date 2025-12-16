@@ -6,6 +6,29 @@
 <title>Donasi Multimedia Gereja ONKP SIONOBANUA</title>
 
 <style>
+/* TABEL DONASI */
+.table-donasi{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,.1)
+}
+.table-donasi th{
+  background:#003366;
+  color:white;
+  padding:10px;
+}
+.table-donasi td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+  text-align:center;
+}
+.table-donasi tr:hover{
+  background:#f5f7fa;
+}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
 body{background:#f5f7fa;color:#333;line-height:1.6}
 
@@ -178,15 +201,39 @@ padding:12px 15px;font-size:18px;cursor:pointer}
 </div>
 
 <section id="laporan">
-<h2>Laporan Donasi</h2>
-<p>Target Donasi: <strong>Rp 33150000</strong></p>
+<section id="transparansi">
+  <h2>Transparansi Donasi</h2>
+  <p style="text-align:center;">
+    Berikut adalah daftar donatur yang telah memberikan dukungan
+    untuk pengadaan alat multimedia Gereja ONKP SIONOBANUA.
+  </p>
 
-<div class="progress-container">
-<div class="progress-bar" id="progress-bar">0%</div>
-</div>
-
-<input type="number" id="donasiInput" placeholder="Jumlah terkumpul (Rp)">
-<button onclick="updateDonasi()" class="btn">Update</button>
+  <div style="overflow-x:auto;">
+    <table class="table-donasi">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Donatur</th>
+          <th>Jumlah Donasi</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Martanelis Gulo, S.Kom</td>
+          <td>Rp 200.000</td>
+          <td>Terima Kasih Tuhan Yesus Memberkati</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Julifati Gulo, S.Pd</td>
+          <td>Rp 200.000</td>
+          <td>Terima Kasih Tuhan Yesus Memberkati</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 <section id="kontak">
    <h2>Kontak Kami</h2>
