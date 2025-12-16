@@ -277,7 +277,7 @@ form.addEventListener("submit", function(e){
   const params = new URLSearchParams();
   params.append("nama", form.nama.value);
   params.append("nominal", form.nominal.value);
-
+  params.append("keterangan", form.keterangan.value);
   fetch(SCRIPT_URL, {
     method: "POST",
     headers: {
@@ -303,3 +303,4 @@ form.addEventListener("submit", function(e){
 </script>
 </body>
 </html>
+
