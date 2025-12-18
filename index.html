@@ -340,7 +340,7 @@ form.addEventListener("submit", function(e){
   params.append("nama", form.nama.value);
   params.append("nominal", form.nominal.value);
   params.append("keterangan", form.keterangan.value);
-  params.append("Catatan", form.catatan.value);
+  params.append("catatan", form.catatan.value);
   fetch(SCRIPT_URL, {
     method: "POST",
     headers: {
@@ -366,6 +366,7 @@ form.addEventListener("submit", function(e){
 </script>
 </body>
 </html>
+
 
 
 
